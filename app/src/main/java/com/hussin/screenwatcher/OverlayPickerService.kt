@@ -83,7 +83,7 @@ class OverlayPickerService : Service() {
 
         // زر تأكيد (يظهر فقط بعد تحديد منطقة)
         val confirmBtn = Button(this).apply {
-            text = "تأكيد"
+            this.text = "تأكيد"
             visibility = if (mode == Mode.PICK_POINT) View.GONE else View.GONE
             setOnClickListener { confirmAreaSelection() }
         }
