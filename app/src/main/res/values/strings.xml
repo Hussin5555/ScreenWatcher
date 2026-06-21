@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Screen Watcher</string>
+    <string name="accessibility_service_description">تسمح هذه الخدمة بقراءة محتوى الشاشة ضمن منطقة يحددها المستخدم، ومقارنته بقيمة مستهدفة، والنقر التلقائي على نقطة محددة عند عدم التطابق.</string>
+</resources>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Screen Watcher"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <!-- حالة صلاحية Accessibility -->
+        <TextView
+            android:id="@+id/tvAccessibilityStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="حالة صلاحية Accessibility: غير مفعّلة"
+            android:textColor="#CC0000"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnEnableAccessibility"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="فتح إعدادات Accessibility" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DDDDDD"
+            android:layout_marginVertical="16dp" />
+
+        <!-- منطقة القراءة -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1) منطقة القراءة (مكان القيمة على الشاشة)"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvAreaStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="غير محددة"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnPickArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="تحديد منطقة القراءة" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DDDDDD"
+            android:layout_marginVertical="16dp" />
+
+        <!-- نقطة النقر -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2) نقطة النقر (زر التالي)"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvPointStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="غير محددة"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnPickPoint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="تحديد نقطة النقر" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DDDDDD"
+            android:layout_marginVertical="16dp" />
+
+        <!-- القيمة المستهدفة -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3) القيمة المستهدفة ونوع المقارنة"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etTargetValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="مثال: 1000"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="8dp" />
+
+        <RadioGroup
+            android:id="@+id/rgCompareType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <RadioButton
+                android:id="@+id/rbGreater"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="أكبر من" />
+
+            <RadioButton
+                android:id="@+id/rbLess"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="أصغر من" />
+
+            <RadioButton
+                android:id="@+id/rbEqual"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="يساوي"
+                android:checked="true" />
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DDDDDD"
+            android:layout_marginVertical="16dp" />
+
+        <!-- التحكم -->
+        <Button
+            android:id="@+id/btnSaveConfig"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="حفظ الإعدادات" />
+
+        <Button
+            android:id="@+id/btnStartStop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="ابدأ المراقبة"
+            android:backgroundTint="#2E7D32" />
+
+        <TextView
+            android:id="@+id/tvRunningStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text=""
+            android:textStyle="bold"
+            android:gravity="center" />
+
+    </LinearLayout>
+</ScrollView>
