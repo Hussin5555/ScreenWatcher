@@ -6,7 +6,7 @@
 
 APP_HOME=$(cd "$(dirname "$0")" && pwd)
 APP_NAME="Gradle"
-DEFAULT_JVM_OPTS='"-Xmx64m" "-Xms64m"'
+DEFAULT_JVM_OPTS=""
 
 warn () {
     echo "$*"
